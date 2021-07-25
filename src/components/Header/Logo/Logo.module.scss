@@ -1,4 +1,4 @@
-@import '../../../colors/';
+@import '@/_sass/colors';
 
 .logoMarks {
   color: $primary;
@@ -8,4 +8,5 @@
 
 .logo {
   transform: rotate(-8deg);
+  margin: 0 auto;
 }

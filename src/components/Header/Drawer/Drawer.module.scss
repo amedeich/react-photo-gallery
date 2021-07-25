@@ -1,0 +1,27 @@
+.navMenu {
+  background-color: #ffffff;
+  box-shadow: 0px 8px 10px -5px rgb(0 0 0 / 20%), 0px 16px 24px 2px rgb(0 0 0 / 14%), 0px 6px 30px 5px rgb(0 0 0 / 12%);
+  width: 150px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 100;
+}
+
+.navbarToggle {
+  padding: 15px;
+  font-size: larger;
+}
+
+.navbarItemContainer {
+  text-align: center;
+}
+
+.navMenuActive {
+  left: 0;
+  transition: 350ms;
+}

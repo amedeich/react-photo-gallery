@@ -8,14 +8,15 @@
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "lint": "npx prettier --write \"**/*.{js,scss,jsx}\""
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +37,11 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.36.0"
+    "@craco/craco": "^6.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "sass": "^1.36.0",
+    "sass-resources-loader": "^2.2.3"
   }
 }

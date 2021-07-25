@@ -1,4 +1,4 @@
-@import '../../../colors/';
+@import '@/_sass';
 
 .container {
   margin-top: 12px;
@@ -17,6 +17,7 @@
   h3 {
     color: #ffffff;
     letter-spacing: 5px;
+    text-align: center;
   }
 
   .subtitleContainer {
@@ -43,5 +44,12 @@
     &:active {
       opacity: 0.5;
     }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .container {
+    height: 200px;
+    padding: 10px;
   }
 }
