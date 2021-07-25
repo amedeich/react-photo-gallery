@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import options from './Button/button-options'
+import options from './options'
 import Button from './Button/Button'
 import styles from './Header.module.scss'
 import Logo from './Logo/Logo'
