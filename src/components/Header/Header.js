@@ -30,7 +30,7 @@ const Header = () => {
   const [$medium] = medium.split('px')
 
   if (width > $medium && isSidebarActive) {
-    setIsSidebarActive(!isSidebarActive)
+    setIsSidebarActive(state => !state)
   }
 
   const setActiveHandler = (_, id) => setIsActive(id)
