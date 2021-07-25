@@ -11,7 +11,7 @@ import Logo from './Logo/Logo'
 import options from './options'
 
 const Backdrop = props => {
-  return props.isSidebarActive && <div className={styles.backdrop}></div>
+  return props.isSidebarActive && <div className={styles.backdrop} onClick={props.onClose}></div>
 }
 
 const Overlay = props => {
@@ -37,7 +37,10 @@ const Header = () => {
   const toggleSidebarHandler = () => setIsSidebarActive(!isSidebarActive)
   return (
     <Fragment>
-      {ReactDOM.createPortal(<Backdrop isSidebarActive={isSidebarActive} />, document.getElementById('backdrop-root'))}
+      {ReactDOM.createPortal(
+        <Backdrop onClose={toggleSidebarHandler} isSidebarActive={isSidebarActive} />,
+        document.getElementById('backdrop-root')
+      )}
       {ReactDOM.createPortal(
         <Overlay isSidebarActive={isSidebarActive} onToggleSidebar={toggleSidebarHandler}>
           {options.map(option => (
