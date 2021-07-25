@@ -1,0 +1,47 @@
+@import '../../../colors/';
+
+.container {
+  margin-top: 12px;
+  background-color: $primary;
+  height: 260px;
+}
+
+.textContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+
+  h3 {
+    color: #ffffff;
+    letter-spacing: 5px;
+  }
+
+  .subtitleContainer {
+    text-align: center;
+
+    small {
+      color: #fff;
+    }
+  }
+
+  .btn {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    color: $primary;
+    background: #fff;
+    width: 171px;
+    font-weight: 700;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

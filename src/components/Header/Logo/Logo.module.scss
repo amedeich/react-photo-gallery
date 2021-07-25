@@ -1,0 +1,11 @@
+@import '../../../colors/';
+
+.logoMarks {
+  color: $primary;
+  margin-left: 2px;
+  font-size: 25px;
+}
+
+.logo {
+  transform: rotate(-8deg);
+}
