@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import PhotosGrid from '../../components/Photos/Photos'
 import { fetchPhotos } from '../../store/gallery-slice'
 import styles from './Gallery.module.scss'
-import './Masonry.scss'
 
 const Loading = React.memo(() => {
   return (
@@ -36,14 +35,6 @@ const Gallery = () => {
       return
     }
     dispatch(fetchPhotos(slug, updatedPage))
-  }
-
-  if (error) {
-    return (
-      <div style={{ textAlign: 'center', marginTop: 10 }}>
-        <small>{error}</small>
-      </div>
-    )
   }
 
   return (
