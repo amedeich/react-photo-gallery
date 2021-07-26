@@ -4,15 +4,20 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: auto;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
 
   .navContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     transition: 0.5s;
+    margin: 0 auto;
+    flex: 1;
   }
 }
+
 
 .backdrop {
   position: fixed;

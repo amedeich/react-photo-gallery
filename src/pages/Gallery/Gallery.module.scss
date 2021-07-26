@@ -1,0 +1,22 @@
+@import '@/_sass';
+
+.loadMore {
+  border: none;
+  background: $primary;
+  padding: 12px;
+  border-radius: 4px;
+  color: #ffffff;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

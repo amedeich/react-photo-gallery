@@ -33,7 +33,12 @@ const Header = () => {
     setIsSidebarActive(prevState => !prevState)
   }
 
-  const setActiveHandler = (_, id) => setIsActive(id)
+  const setActiveHandler = (_, id) => {
+    setIsActive(id)
+    if (isSidebarActive) {
+      toggleSidebarHandler()
+    }
+  }
   const toggleSidebarHandler = () => setIsSidebarActive(!isSidebarActive)
   return (
     <Fragment>
